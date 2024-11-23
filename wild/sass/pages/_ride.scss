@@ -1,0 +1,199 @@
+
+.ride_slider{
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: 36px;
+}
+
+
+.ride_sl_i,
+.ride_nv_img{
+	img{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+.ride_nv_i{
+	outline: none !important;
+	margin: 20px 10px 0;
+}
+
+
+
+.ride_nv_img{
+	// padding: 10px;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+
+
+
+
+.ride_content{
+	padding: 30px 0 0;
+}
+
+
+.ride_tbl{
+	font-size: 15px;
+	letter-spacing: 0.2px;
+	margin-bottom: 44px;
+	table{
+		width: 100%;
+		border: 1px solid rgba(0,173,233,1);
+	}
+	td{
+		padding: 11px 11px;
+	}
+	td:first-of-type{
+		background-color: #00ADE9;
+		color: #fff;
+		border-bottom: 1px solid rgba(255,255,255,0.15);
+		font-weight: 600;
+	}
+	td:last-of-type{
+		color: rgba(6,6,6,1);
+		border-bottom: 1px solid rgba(40,40,120,0.1);
+		font-size: 14px;
+	}
+	tr:first-of-type{
+		td{
+			padding-top: 24px;
+		}
+	}
+	tr:last-of-type{
+		td{
+			padding-bottom:24px;
+			border-bottom: none;
+		}
+	}
+}
+
+.ride_ttl_inn{
+	text-align: center;
+	margin-bottom: 30px;
+	h2{
+		padding-top: 20px;
+		margin-bottom: 0;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: rgba(1,1,1,1);
+	}
+	h3{
+		padding-top: 15px;
+		font-size: 16px;
+		margin-bottom: 0;
+	}
+	p{
+		padding-top: 15px;
+		margin-bottom: 0;
+	}
+}
+
+.ride_for{
+	>img{
+		width: 135px;
+	}
+}
+
+.ride_txt{
+	overflow-y: hidden;
+	p{
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+
+
+
+.comment{
+	padding: 28px 0 35px;
+}
+
+.comment_form{
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+
+.comment_ttl{
+	padding-bottom: 12px;
+	margin-bottom: 16px;
+	font-size: 16px;
+	border-bottom: 1px solid rgba(40,40,120,0.1);
+}
+
+.comment_wrap{
+	display: flex;
+}
+
+.comment_img{
+	width: 47px;
+	padding-right: 11px;
+	>img{
+		width: 100%;
+	}
+}
+
+
+.comment_con{
+	flex: 1;
+	textarea{
+		padding: 10px;
+		width: 100%;
+		border: 1px solid rgba(40,40,120,0.2);
+		font-size: 15px;
+		&:focus{
+			outline: 1px solid $blue;
+			// box-shadow: 0px 0px 1px 0px $blue;
+		}
+	}
+}
+.comment_fields{
+	margin-bottom: 4px;
+}
+.comment_buttons{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.comment_buttons_chbx{
+	font-size: 13px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	label{
+		margin-bottom: 0;
+		color: rgba(0,0,0,0.6);
+		font-weight: 400;
+	}
+}
+
+.comment_buttons .btn-form{
+	font-size: 13px;
+	padding: 4px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

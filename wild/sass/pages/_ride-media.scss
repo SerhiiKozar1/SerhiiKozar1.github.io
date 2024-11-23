@@ -1,0 +1,158 @@
+@media only screen and (min-width : 360px){
+
+.ride_tbl{
+	td{
+		padding: 11px 14px;
+	}
+}
+
+}//
+@media only screen and (min-width : 420px){
+
+.comment{
+	padding: 28px 28px 35px;
+	border: 1px solid rgba(40,40,120,0.1);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.1);
+}
+
+}
+@media only screen and (min-width : 576px){
+
+.ride{
+	margin: 0;
+}
+.ride_nv{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+
+.ride_content{
+	padding: 34px 35px 35px;
+	border: 1px solid rgba(40,40,120,0.1);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.1);	
+}
+
+
+
+}//
+@media only screen and (min-width : 768px){
+
+.ride_tbl{
+	td{
+		padding: 11px 23px;
+	}
+}
+
+}//
+@media only screen and (min-width : 992px){
+
+.ride_inf{
+	display: flex;
+}
+.ride_tbl{
+	flex-shrink: 0;
+	margin-bottom: 0;
+}
+
+
+.ride_ttl_inn{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	padding-left: 35px;
+	margin-bottom: 0;
+	text-align: left;
+}
+
+.ride_txt{
+	margin-top: 23px;
+}
+}//
+@media only screen and (min-width : 1200px){
+.ride{
+	max-width: 1004px;
+	margin: 0 auto;
+}
+.ride_slider{
+	margin-left: 0;
+	margin-right: 0;
+}
+.ride_nv_i{
+	margin: 10px;
+}
+.ride_nv{
+	margin: 0;
+	padding: 0 176px 0 176px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 106px;
+	background-color: rgba(0,0,0,0.3);
+	.slick-current .ride_nv_img{
+		border: 3px solid #fff !important;
+	}
+	.slick-track{
+	}
+}
+
+.ride_slider{
+	z-index: 1;
+	position: relative;
+	.slick-arrow{
+		z-index: 1;
+		position: absolute;
+		bottom: 30px;
+		cursor: pointer;
+		font-size: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		outline: none !important;
+		&:before{
+			content: "";
+			display: inline-block;
+			font-size: 30px;
+			font-family: "Font Awesome 5 Pro";
+			font-weight: 900;
+		    display: inline-block;
+		    color: #fff;
+		}
+	}
+	.slick-next{
+		right: 22px;
+		&:before{
+			content: "\f054";
+		}
+	}
+	.slick-prev{
+		left: 22px;
+		&:before{
+			content: "\f053";
+		}
+	}
+}
+ 
+.ride_tbl{
+	td{
+		padding: 10px 44px 11px 36px;
+	}
+	td:last-of-type{
+		padding-left: 27px;
+		padding-right: 64px;
+	}
+}
+
+}//
+@media only screen and (min-width : 1600px){
+
+
+
+}//
+@media only screen and (min-width : 1920px){
+
+
+
+}//

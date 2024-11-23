@@ -1,0 +1,314 @@
+@import "tools/fonts";
+
+@import "tools/variables";
+@import "tools/reset_and_basic-classes";
+
+
+//main tags & classes
+html{}
+body{
+	min-width: 320px;
+	position: relative;
+	// color: $c-main;
+	// background-color: $bg-main-c;
+    font-family: 'Brandon Grotesque';
+	font-style: normal;
+	color: rgba(1,1,1,1);
+	font-weight: 400;
+}
+.page{
+	position: relative;
+	overflow: hidden;
+	// height: 10000px;
+}
+
+.footer{
+
+}
+
+h1{
+	font-size: 24px;
+}
+h2{
+	font-size: 22px;
+}
+h3{
+	font-size: 20px;
+}
+h4{
+	font-size: 18px;
+}
+h5{
+	font-size: 17px;
+}
+h6{
+	font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+	// color: rgba(26,26,26,1);
+	color: rgba(1,1,1,1);
+	font-weight: bold;
+}
+a{
+	color: $blue;
+	&:hover{
+		color: $blue;
+	}
+}
+
+ul{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	line-height: 1.8;
+}
+p{
+	margin-bottom: 23px;
+}
+img{
+	max-width: 100%;
+}
+
+@media (min-width: 1200px){
+	.container {
+	    max-width: 1200px;
+	}
+}
+
+.s-margin{
+	margin-bottom: 67px;
+}
+.s-padding{
+	padding-top: 67px;
+	padding-bottom: 31px;
+}
+.s-ttl{
+	text-align: center !important;
+	margin-bottom: 38px;
+	h1,
+	h2{
+		color: $blue !important;
+		font-weight: 400 !important;
+		font-size: 26px !important;
+		text-transform: uppercase !important;
+		margin-bottom: 14px !important;
+	}
+	.s-ttl_hint{
+		font-size: 15px;
+		font-weight: 500;
+		color: rgba(16,15,15,0.7);
+		max-width: 700px;
+		margin: 0 auto;
+	}
+}
+@media only screen and (min-width : 992px){
+	.s-ttl{
+		h1,
+		h2{
+			font-size: 30px !important;
+		}
+	}
+}
+
+.container-small{
+	max-width: 790px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.s-btn{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.btn{
+	display: inline-block;
+	padding: 5px 35px;
+	font-weight: 500;
+	border-radius: 0;
+	border: none !important;
+	outline: none !important;
+	color: #fff !important;
+	font-size: 16px;
+	text-decoration: none !important;
+	box-shadow: none !important;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+.btn-primary{
+	background-color: $btn-or !important;
+	&:hover{
+		background-color: #FF7226 !important;
+	}
+	&:active{
+		background-color: #DD4B00 !important;
+	}
+}
+.btn-form{
+	background-color: rgba(156,180,216,1) !important;
+	&:hover{
+		background-color: $blue !important;
+	}
+	&:active{
+		background-color: $dark-blue !important;
+	}
+}
+
+
+
+
+.shadow-hov{
+	transition: box-shadow 0.2s;
+	&:hover{
+		box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.16);	
+	}
+}
+
+
+.checkbox-style input[type=checkbox]{
+	display: none !important;
+}
+.checkbox-style label{
+	cursor: pointer;
+}
+.checkbox-style label:before{
+  content: "\2714";
+  color: transparent;
+  display: inline-block !important;
+  font-size: 14px;    
+  line-height: 16px;
+  margin: -5px 5px 0 0;
+  height: 17px;
+  width: 17px;
+  text-align: center;
+  vertical-align: middle;
+  transition: color ease .3s;
+  font-weight: 900;
+  background-color: #fff;
+  border: 1px solid rgba(40,40,120,0.3);
+  border-radius: 2px;
+}
+.checkbox-style input:checked + label:before{
+  color: $blue !important;
+}
+
+
+.table-style{
+	width: 100%;
+	border: 1px solid $blue;
+	font-size: 13px;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.1);
+	tr{
+		border-bottom: 1px solid #E9E9F1;
+		&:last-of-type{
+			border-bottom: none;
+		}
+		td:first-of-type{
+			border-left: 1px solid $blue;
+		}
+		td:last-of-type{
+			border-right: 1px solid $blue;
+		}
+	}
+	th{
+		background-color: $blue;
+		color: #fff;
+		font-size: 13px;
+		b{
+			font-size: 16px;
+			line-height: 1.4;
+		}
+	}
+	td{
+		padding-top: 22px;
+		padding-bottom: 22px;
+	}
+	th,
+	td{
+		padding-left: 15px;
+		padding-right: 5px;
+	}
+}
+
+.s-small-txt{
+	font-size: 13px;
+	line-height: 1.7;
+}
+
+
+
+//
+@import "media";
+
+@import "header";
+@import "header-media";
+//
+
+@import "parts/home-slider";
+@import "parts/home-slider-media";
+
+@import "parts/home-rides";
+@import "parts/home-rides-media";
+
+@import "parts/home-events";
+@import "parts/home-events-media";
+
+@import "parts/home-join";
+@import "parts/home-join-media";
+
+@import "parts/home-facebook";
+@import "parts/home-facebook-media";
+
+
+
+@import "pages/ride";
+@import "pages/ride-media";
+
+@import "pages/pass";
+@import "pages/pass-media";
+
+@import "pages/birthday";
+@import "pages/birthday-media";
+
+@import "pages/services";
+@import "pages/services-media";
+
+@import "pages/post";
+@import "pages/post-media";
+
+@import "pages/corporate-sales";
+@import "pages/corporate-sales-media";
+
+@import "pages/hours-1";
+@import "pages/hours-1-media";
+
+@import "pages/guest";
+@import "pages/guest-media";
+
+
+
+
+
+
+
+
+//
+@import "footer";
+@import "footer-media";
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+
+@media only screen and (min-width : 576px){
+
+.h-slider_txt{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.h-slider_cont{
+	margin: 0;
+	padding: 0;
+}
+.h-slider_hint{
+	font-size: 30px;
+}
+.h-slider_ttl{
+	font-size: 78px;
+	line-height: 58px;
+}
+}//
+
+@media only screen and (min-width : 1600px){
+
+.h-slider_i{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 700px;
+}
+
+}//
+@media only screen and (min-width : 1920px){
+
+	.h-slider_i{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		height: 800px;
+	}
+
+}//
